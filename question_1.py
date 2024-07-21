@@ -1,5 +1,4 @@
 
-
 class TreeNode:
     def __init__(self, key):
         self.key = key
@@ -112,7 +111,7 @@ class BinaryTree:
         if node is None:
             return
         self._print_tree_recursive(node.right, depth+1)
-        print("     "*depth+str(node.key))
+        print("          "*depth+str(node.key))
         self._print_tree_recursive(node.left, depth+1)
 
 
